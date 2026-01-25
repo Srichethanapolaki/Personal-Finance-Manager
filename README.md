@@ -51,24 +51,28 @@ Built with **HTML, CSS, and JavaScript** using **LocalStorage** for data persist
 ---
 
 ## 📂 Project Structure
+## 📂 Project Structure
+
+```
 Personal-Finance-Manager/
 │
-├── index.html # Login page (popup)
-├── register.html # Register page
-├── dashboard.html # Main dashboard
-├── add.html # Add income / expense
-├── reports.html # Charts & reports
-├── settings.html # Settings page
+├── index.html        # Login page (popup)
+├── register.html     # Register page
+├── dashboard.html    # Main dashboard
+├── add.html          # Add income / expense
+├── reports.html      # Charts & reports
+├── settings.html     # Settings page
 │
 ├── css/
-│ └── style.css
+│   └── style.css
 │
 └── js/
-├── auth.js
-├── dashboard.js
-├── add.js
-├── reports.js
-└── settings.js
+    ├── auth.js
+    ├── dashboard.js
+    ├── add.js
+    ├── reports.js
+    └── settings.js
+```
 🖥️ How to Run Locally
 
 Clone the repository:
