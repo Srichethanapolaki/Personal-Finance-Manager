@@ -4,6 +4,20 @@ A modern, responsive personal finance management web application to track **inco
 
 Built with **HTML, CSS, and JavaScript** using **LocalStorage** for data persistence.
 
+## 📸 Screenshots
+
+### 🔐 Login
+![Login](screenshots/login.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### ➕ Add Transaction
+![Add](screenshots/add.png)
+
+### 📈 Reports
+![Reports](screenshots/reports.png)
+
 ---
 
 ## 🚀 Features
