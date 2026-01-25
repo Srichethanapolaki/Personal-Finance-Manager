@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+    <h2>💰 Finance</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="add.html">Add</a>
+    <a href="reports.html">Reports</a>
+    <a href="settings.html">Settings</a>
+    <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+    <h2>Add Transaction</h2>
+
+    <button onclick="openIncomeSheet()">➕ Add Income</button>
+    <button onclick="openExpenseSheet()">➖ Add Expense</button>
+</div>
+
+</div> <!-- end dashboard -->
+
+<!-- Income Bottom Sheet -->
+<div class="bottom-sheet" id="incomeSheet">
+    <h3>Add Income</h3>
+    <input id="incomeAmount" type="number" placeholder="Amount">
+    <input id="incomeNote" type="text" placeholder="Note">
+    <input id="incomeDate" type="date">
+    <button onclick="addIncome()">Add Income</button>
+    <button onclick="closeSheets()">Cancel</button>
+</div>
+
+<!-- Expense Bottom Sheet -->
+<div class="bottom-sheet" id="expenseSheet">
+    <h3>Add Expense</h3>
+    <input id="expenseAmount" type="number" placeholder="Amount">
+
+    <select id="expenseCategory">
+        <option value="">Select Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Rent</option>
+        <option>Shopping</option>
+        <option>Others</option>
+    </select>
+
+    <input id="expenseNote" type="text" placeholder="Note">
+    <input id="expenseDate" type="date">
+    <button onclick="addExpense()">Add Expense</button>
+    <button onclick="closeSheets()">Cancel</button>
+</div>
+
+<!-- MAIN LOGIC FILE -->
+<script src="js/add.js"></script>
+
+<!-- POPUP CONTROL SCRIPT -->
+<script>
+function openIncomeSheet() {
+    document.getElementById("incomeSheet").classList.add("show");
+}
+
+function openExpenseSheet() {
+    document.getElementById("expenseSheet").classList.add("show");
+}
+
+function closeSheets() {
+    document.getElementById("incomeSheet").classList.remove("show");
+    document.getElementById("expenseSheet").classList.remove("show");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings - Personal Finance Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+        <h2>💰 Finance</h2>
+        <a href="dashboard.html">🏠 Dashboard</a>
+        <a href="add.html">➕ Add</a>
+        <a href="reports.html">📊 Reports</a>
+        <a href="settings.html">⚙️ Settings</a>
+        <a href="#" onclick="logout()">🚪 Logout</a>
+    </div>
+
+    <div class="main">
+        <h2>Settings</h2>
+
+        <div class="settings-box">
+            <h3>Data Management</h3>
+
+            <button class="danger-btn" onclick="clearTransactions()">
+                🗑️ Clear All Transactions
+            </button>
+
+            <button class="danger-btn" onclick="resetAccount()">
+                ⚠️ Reset Account (Delete Everything)
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/settings.js"></script>
+</body>
+</html>

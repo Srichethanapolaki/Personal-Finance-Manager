@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+        <h2>💰 Finance</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add.html">Add</a>
+        <a href="reports.html">Reports</a>
+        <a href="settings.html">Settings</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+
+    <div class="main">
+        <h2 id="welcome"></h2>
+
+        <div class="cards">
+            <div class="card">
+                <h4>Total Income</h4>
+                <span id="income">₹0</span>
+            </div>
+
+            <div class="card">
+                <h4>Total Expense</h4>
+                <span id="expense">₹0</span>
+            </div>
+
+            <div class="card">
+                <h4>Balance</h4>
+                <span id="balance">₹0</span>
+            </div>
+        </div>
+
+        <h3>Recent Transactions</h3>
+        <ul id="list"></ul>
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
