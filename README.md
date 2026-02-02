@@ -103,7 +103,8 @@ Clean project structure
 
 Product-style frontend development
 
-Live Demo
+🖥️Live Demo: 
+
 https://srichethanapolaki.github.io/Personal-Finance-Manager/
 
 💼 Resume Description
